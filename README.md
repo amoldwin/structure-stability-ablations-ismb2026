@@ -1,6 +1,6 @@
 # Structure–Stability Ablations (ISMB 2026 submission) — repository overview
 
-This repository contains code used for the experiments in our ISMB 2026 submission `When Does Protein Structure Help?]{When Does Protein Structure Help? A Case Study of Mutation-Induced Melting Temperature Shifts`
+This repository contains code used for the experiments in our ISMB 2026 submission `When Does Protein Structure Help? A Case Study of Mutation-Induced Melting Temperature Shifts`
 
 Authors: Asher Moldwin, Yana Bromberg and Amarda Shehu
 
