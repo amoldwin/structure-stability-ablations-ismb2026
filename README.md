@@ -1,8 +1,18 @@
 # Structure–Stability Ablations (ISMB 2026 submission) — repository overview
 
-This repository contains code used for the experiments in our ISMB 2026 submission. The implementation builds on the GeoStab architecture and includes additional scripts and fixes that were developed to run feature generation, model training / ablations, and structural analyses used in the paper.
+This repository contains code used for the experiments in our ISMB 2026 submission `When Does Protein Structure Help?]{When Does Protein Structure Help? A Case Study of Mutation-Induced Melting Temperature Shifts`
+
+Authors: Asher Moldwin, Yana Bromberg and Amarda Shehu
+
+The implementation builds on the GeoStab architecture and includes additional scripts and fixes that were developed to run feature generation, model training / ablations, and structural analyses used in the paper.
+
+The original GeoStab repository can be found at: https://github.com/Gonglab-THU/GeoStab
+
+Please reach out to me if you have any questions about reproducing our ablations or analyses. 
 
 This README gives a quick tour of what is in the repo and how the major pieces fit together.
+
+We have a BioRxiv preprint at: https://www.biorxiv.org/content/10.64898/2025.12.22.694225v1  (This includes the basic ablations but does not include all analyses in the ISMB submission).
 
 ## High-level structure
 
