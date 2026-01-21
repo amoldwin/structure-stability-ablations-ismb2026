@@ -68,8 +68,4 @@ Install core Python deps with your preferred package manager (conda/pip). ESMFol
 - Fixed-dimension behavior for concatenated fixed features is deterministic in the training scripts: fixed feature length = 7 (physchem) + (pH present?) + (pLDDT present?).
 - The code in this repo is the research code used for experiments and is under active development; expect some rough edges and scripts tailored for our dataset layout.
 
-If you want, I can:
-- Expand this README with exact example commands for a minimal end-to-end run.
-- Add a quick troubleshooting / FAQ section (common pitfalls: pLDDT length mismatches, missing atoms in PDBs, CUDA OOM).
-- Create small usage docs for each top-level script.
 ```
