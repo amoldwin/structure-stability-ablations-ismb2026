@@ -28,7 +28,7 @@ This README gives a quick tour of what is in the repo and how the major pieces f
     - `fitness_model/` — pretraining model code for masked prediction tasks.
 
 ## Typical workflows
-
+0. Generate Fastas and directory structure for WT/mutants from dataset: run Create_GeoStab_FASTAs.py
 1. Generate structural predictions for WT / MUT with ESMFold:
    - `python scripts/generate_esmfold_sharded.py --data_parent /path/to/features_root --N <num_shards> --ID <shard_id> ...`
 
@@ -41,13 +41,10 @@ This README gives a quick tour of what is in the repo and how the major pieces f
      - `python generate_features/pair.py --coordinate_file sample/coordinate.pt --saved_folder sample_dir --out_fn sample/pair.pt`
      - For the more feature-rich pair matrix use `pair_advanced.py`.
 
-3. Assemble ensemble inputs:
-   - `python generate_features/ensemble_ddGdTm.py --af2_pickle_file ... --saved_folder sample_dir`
-   - `python generate_features/ensemble_fitness.py --af2_pickle_file ... --saved_folder sample_dir`
-
 4. Train / run ablations:
    - `python train_code/train_geodtm_ablation.py --train_csv ... --features_dir ... --out_dir ... [ablation flags]`
    - `python train_code/train_geodtm_radius_ablation.py --radius 0 --train_csv ...` (radius windowing)
+   - In our paper, we used passed the `seed` arg with values 0-9 and retrained/evaluated performancw with each of these for each ablation
 
 5. Analyze structural mismatch vs model error:
    - `python scripts/analyze_graph_vs_performance.py --features_dir ... --tmalign_bin /path/to/TMalign ...`
