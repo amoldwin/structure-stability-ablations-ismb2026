@@ -23,7 +23,7 @@ We have a BioRxiv preprint at: https://www.biorxiv.org/content/10.64898/2025.12.
     - `fixed_embedding.py` — per-residue physicochemical descriptors (7 dims + optional pH/pLDDT concatenation elsewhere).
     - `coordinate.py` — parse PDBs and write `pos14` / `pos14_mask` tensors (per-residue 14-atom layout).
     - `pair.py` / `pair_advanced.py` — compute pairwise geometric features (rotation/quaternion, relative vectors, RBF-expanded distance features). `pair_advanced` computes extra features (dmin RBF, CB vectors).
-    - `ensemble_*` scripts — utilities that assemble inputs (wt / mut) into ensemble tensors used downstream for ddG/dTm/fitness models.
+    - `ensemble_*` scripts — utilities that assemble inputs (wt / mut) into ensemble tensors used downstream for ddG/dTm/fitness models. We forgo these because not all input sources are needed for all experiments.
 - `scripts/`
   - Orchestration and analysis:
     - `generate_esmfold_sharded.py` — run ESMFold (WT de-duplication, stable sharding, safe propagation of WT outputs).
