@@ -1,4 +1,3 @@
-```markdown
 # Structure–Stability Ablations (ISMB 2026 submission) — repository overview
 
 This repository contains code used for the experiments in our ISMB 2026 submission. The implementation builds on the GeoStab architecture and includes additional scripts and fixes that were developed to run feature generation, model training / ablations, and structural analyses used in the paper.
