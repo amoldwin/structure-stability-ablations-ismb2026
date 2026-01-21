@@ -28,7 +28,7 @@ This README gives a quick tour of what is in the repo and how the major pieces f
     - `fitness_model/` — pretraining model code for masked prediction tasks.
 
 ## Typical workflows
-
+0. Generate Fastas and directory structure for WT/mutants from dataset: run Create_GeoStab_FASTAs.py
 1. Generate structural predictions for WT / MUT with ESMFold:
    - `python scripts/generate_esmfold_sharded.py --data_parent /path/to/features_root --N <num_shards> --ID <shard_id> ...`
 
