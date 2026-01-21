@@ -73,6 +73,6 @@ Install core Python deps with your preferred package manager (conda/pip). ESMFol
 - Many scripts are written to be restart-safe and to support SLURM-array-style sharding; read the script-level docstrings for sharding semantics.
 - There are multiple variants of structural files (ESMFold vs Rosetta); training scripts can prefer rosetta files when available.
 - Fixed-dimension behavior for concatenated fixed features is deterministic in the training scripts: fixed feature length = 7 (physchem) + (pH present?) + (pLDDT present?).
-- The code in this repo is the research code used for experiments and is under active development; expect some rough edges and scripts tailored for our dataset layout.
+
 
 ```
